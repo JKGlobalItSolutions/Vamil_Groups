@@ -67,4 +67,7 @@ body {
   #full{
     width: 100%;
   }
+}.d-block{
+  width: 300px;
+  height: 300px;
 }
