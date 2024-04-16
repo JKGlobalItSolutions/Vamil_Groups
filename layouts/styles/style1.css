@@ -54,4 +54,17 @@ body {
 
 
 
+#decor{
+  border-style: none !important;
+ 
+}
+#decor1{
+  text-decoration: none;
+}
+@media only screen and (min-width: 1024px) {
+  /* Your CSS styles here */
 
+  #full{
+    width: 100%;
+  }
+}
