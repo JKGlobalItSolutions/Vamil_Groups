@@ -842,6 +842,15 @@
         .fad.fa-inverse,
         .fa-duotone.fa-inverse {
             color: var(--fa-inverse, #fff);
+
+       
+
+
+            .nav-link.active {
+    text-decoration: underline;
+}
+
+
         }
     </style>
     <link rel="icon" href="./assets/mainimages/Nkc Logo.png">
@@ -898,34 +907,33 @@
                                                       <span class="navbar-toggler-icon"></span>
                                                     </button>
                                                     <div class="">
-                                                        <nav class="navbar navbar-expand-lg navbar-light mt-5 gap-4 px-4 ">
-                                                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                                            <ul class="navbar-nav mr-auto " >
-                                                              <li class="nav-item active">
-                                                                <a class="nav-link px-3 list-group-item-action list-group-item-warning rounded-circle " href="./index.html" style="font-size: larger;font-weight: 500;">Home</a>
-                                                              </li>
-                                                              <li class="nav-item">
-                                                                <a class="nav-link px-3 list-group-item-action list-group-item-warning rounded-circle" href="./services.html" style="font-size: larger;font-weight: 500;" >Services</a>
-                                                              </li>
-                                                              <li class="nav-item ">
-                                                                <a class="nav-link px-3 list-group-item-action list-group-item-warning rounded-circle" href="./Product.html" style="font-size: larger;font-weight: 500;">
-                                                                  Products
-                                                                </a>
-                                                              </li>
-                                                              <li class="nav-item ">
-                                                                <a class="nav-link px-3 list-group-item-action list-group-item-warning rounded-circle" href="./gallery.html" style="font-size: larger;font-weight: 500;">
-                                                                  Gallery
-                                                                </a>
-                                                              </li>
-                                                              <li class="nav-item px-3">
-                                                                <a class="nav-link list-group-item-action list-group-item-warning rounded-circle" href="./about.html" style="font-size: larger;font-weight: 500;">About Us</a>
-                                                              </li>
-                                                              <li class="nav-item  px-3">
-                                                                <a class="nav-link  list-group-item-action list-group-item-warning rounded-circle" href="./contact.html" style="font-size: larger;font-weight: 500;">Contact Us</a>
-                                                              </li>
-                                                            </ul>
-                                                          </div>
-              </nav>
+                                                        <nav class="navbar navbar-expand-lg navbar-light mt-5 gap-4 px-4">
+                                                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                                                <ul class="navbar-nav mr-auto">
+                                                                    <li class="nav-item ">
+                                                                        <a class="nav-link px-3 list-group-item-action list-group-item-warning rounded-circle " href="./index.html" style="font-size: larger;font-weight: 500;">Home</a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link px-3 list-group-item-action list-group-item-warning rounded-circle" href="./services.html" style="font-size: larger;font-weight: 500;">Services</a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link px-3 list-group-item-action list-group-item-warning rounded-circle" href="./Product.html" style="font-size: larger;font-weight: 500;">Products</a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link px-3 list-group-item-action list-group-item-warning rounded-circle" href="./gallery.html" style="font-size: larger;font-weight: 500;">Gallery</a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link px-3 list-group-item-action list-group-item-warning rounded-circle" href="./about.html" style="font-size: larger;font-weight: 500;">About Us</a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link list-group-item-action list-group-item-warning rounded-circle" href="./contact.html" style="font-size: larger;font-weight: 500;">Contact Us</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                        
+                                                        
+                                                        
             </div>
            </div>
            <hr style="background-color: #ffc20f;" >
@@ -1210,6 +1218,24 @@
           }).mount();
         });
       </script>
+      <script>
+       
+    
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            navLinks.forEach(item => {
+                item.classList.remove('active');
+            });
+            this.classList.add('active');
+        });
+    });
+</script>
+
+
+
+ 
 </body>
 
 </html>
